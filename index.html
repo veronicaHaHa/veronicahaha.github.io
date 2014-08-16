@@ -24,14 +24,6 @@
           type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="js/spoiler.js"></script>
-    <script>
-        $(function () {
-            $('.spoiler').spoilerAlert({max: 10, partial: 0});
-        })
-    </script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -411,24 +403,16 @@
 <div class="bottom" style="height: 56px;background-color: #33373d;">
     <span>Designed & Developed by MinJee Hahm</span>
 </div>
-<script src="js/jquery.min.js"></script>
-<!--<script src="js/plugins.js"></script>-->
-<!--<script src="js/main.js"></script>-->
-<script src="js/scripts.js"></script>
-
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_trackPageview']);
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
+<script src="js/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/spoiler.js"></script>
+<script>
+    $(function () {
+        $('.spoiler').spoilerAlert({max: 10, partial: 0});
+    })
 </script>
 </body>
 </html>
