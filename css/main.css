@@ -142,7 +142,7 @@ textarea {
 Intro
 ========================================================================== */
 .main {
-    min-width: 500px;
+    /*min-width: 500px;*/
     display: inline-block;
     clear: none;
     /*text-align: center;*/
