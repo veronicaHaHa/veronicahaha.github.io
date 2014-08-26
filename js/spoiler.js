@@ -73,8 +73,7 @@
         return !document.createElement('canvas').getContext
       }
 
-      applyBlur(currentBlur)
-
+      applyBlur(currentBlur);
       $spoiler.on('mouseover', function(e) {
         $spoiler.css('cursor', 'pointer')
           .attr('title', hintText)

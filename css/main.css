@@ -46,14 +46,7 @@ a:focus { outline: thin dotted; }
 /* * Improves readability when focused and also mouse hovered in all browsers. */
 a:active, a:hover { outline: 0; }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
@@ -117,9 +110,6 @@ textarea {
     display: inline-block;
     vertical-align: middle;
 }
-.amc{
-    float: left;
-}
 .header{
     width: 100%;
     position: fixed;
@@ -128,25 +118,29 @@ textarea {
     z-index: 999;
 }
 
-.header span {
-    width:33.3%;
-    display: inline-block;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+.header li {
+      width:33.3%;
+      display: inline-block;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      height: inherit;
+  }
+.header a {
     color: #6d7c95;
-    font-size: 15px;
-    height: inherit;
+    text-decoration: none;
+}
+.amc{
+    float: left;
 }
 /* ==========================================================================
 Intro
 ========================================================================== */
 .main {
-    overflow: hidden;
     /*min-width: 500px;*/
     display: inline-block;
     clear: none;
-    /*text-align: center;*/
     padding-bottom: 50px;
     width: 100%;
 }
@@ -183,16 +177,17 @@ Intro
     display: block;
     position: relative;
     margin: 2rem auto 0px;
-    background-color: #FFF;
-    height: 0.04rem;
-    width: 1.7rem;
+    background-color: rgba(254, 123, 98, 1);
+    height: 0.1rem;
+    width: 0.8rem;
 }
 .intro h2 {
-    font-size: 24px;
-    font-family: 'Playball', cursive;
-    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
     color: #ffffff;
     margin: 30px auto;
+    letter-spacing: 1px;
     text-align: center;
 }
 /* ==========================================================================
@@ -447,10 +442,15 @@ MyWork
     display: block;
     margin: 0 auto;
     width: 100%;
-    /*height: 1330px;*/
     position: relative;
-    padding: 0 50px;
+    background-color: white;
 }
+.content{
+    text-align: center;
+}
+/*.img { overflow: hidden; }*/
+/*.img a { display: block;}*/
+/*.img a img { display: block; border: 0; }*/
 
 .prf_01{
     height: 420px;
@@ -458,7 +458,7 @@ MyWork
     display: inline-block;
     position: relative;
     margin: 10px 10px 0 auto;
-    float: left;
+    /*float: left;*/
     /*background-image: url('../img/prf_01.png');*/
 }
 .prf_02{
@@ -467,12 +467,12 @@ MyWork
     height: 420px;
     position: relative;
     margin: 10px 10px 0 auto;
-    float: left;
+    /*float: left;*/
     /*background-image: url('../img/prf_02.png');*/
 }
 .prf_03{
     display: inline-block;
-    float: left;
+    /*float: left;*/
     width: 420px;
     height: 420px;
     position: relative;
@@ -485,7 +485,7 @@ MyWork
     height: 420px;
     position: relative;
     margin: 10px 10px 0 auto;
-    float: left;
+    /*float: left;*/
     /*background-image: url('../img/prf_04.png');*/
 }
 .prf_05{
@@ -494,12 +494,12 @@ MyWork
     height: 420px;
     position: relative;
     margin: 10px 10px 0 auto;
-    float: left;
+    /*float: left;*/
     /*background-image: url('../img/prf_05.png');*/
 }
 .prf_06{
     display: inline-block;
-    float: left;
+    /*float: left;*/
     width: 420px;
     height: 420px;
     position: relative;
@@ -512,7 +512,7 @@ MyWork
     height: 420px;
     position: relative;
     margin: 10px 10px 0 auto;
-    float: left;
+    /*float: left;*/
     /*background-image: url('../img/prf_07.png');*/
 }
 .prf_08{
@@ -521,7 +521,7 @@ MyWork
     height: 420px;
     position: relative;
     margin: 10px 10px 0 auto;
-    float: left;
+    /*float: left;*/
     /*background-image: url('../img/prf_08.png');*/
 }
 .prf_09{
@@ -530,7 +530,7 @@ MyWork
     height: 420px;
     position: relative;
     margin: 10px 0 10px auto;
-    float: left;
+    /*float: left;*/
     /*background-image: url('../img/prf_09.png');*/
 }
 /* ==========================================================================
@@ -543,7 +543,7 @@ Specialize
     letter-spacing: -2px;
     color: #455c82;
     text-align: center;
-    margin-top: 40px;
+    margin: 40px 4px 0 4px;
 }
 .specialize {
     /*display: inline-block;*/
@@ -629,8 +629,8 @@ Specialize
     background: url('../img/minjeehahm_bg.png') no-repeat fixed center center / cover transparent;
 }
 .footer span{
+    margin-top: 50px;
      display: inline-block;
-     margin-top: 50px;
      text-align: left;
      font-family: 'Montserrat', sans-serif;
      font-weight: 400;
@@ -696,7 +696,7 @@ Specialize
     text-align: left;
     text-decoration: none;
 }
-.footer .message input[type=text]{
+.footer .your-message{
     outline: none;
     -webkit-appearance: none;
     border-radius: 4px;
@@ -791,10 +791,12 @@ Specialize
    ========================================================================== */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
-.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
-.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
-.delay-2s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
-.delay-3s { animation-delay: 2s; -webkit-animation-delay: 2s; }
+.delay-05s { animation-delay: 0.25s; -webkit-animation-delay: 0.2s; }
+.delay-1s { animation-delay: 0.5s; -webkit-animation-delay: 0.45s; }
+.delay-2s { animation-delay: 0.75s; -webkit-animation-delay: 0.7s; }
+.delay-3s { animation-delay: 1s; -webkit-animation-delay: 0.5s; }
+.delay-4s { animation-delay: 1.25s; -webkit-animation-delay: 1.2s; }
+.delay-5s { animation-delay: 1.5s; -webkit-animation-delay: 1.25s; }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -904,7 +906,35 @@ Specialize
 
 @media only screen and (min-width: 50em) {
     /* Style adjustments for viewports that meet the condition */
-    .main .intro .title h1 {
+    .main {
+        min-width: 500px;
+        display: inline-block;
+        clear: none;
+        /*text-align: center;*/
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .intro {
+        width: 100%;
+        height: 734px;
+        background-color: #414e63;
+        margin-top: 56px;
+    }
+    .spoiler {
+        width: 100%;
+        height: 734px;
+        border: 0;
+        background: url("../img/minjeehahm_bg2.png") no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        display: inline-block;
+    }
+    .intro .title {
+        position: relative;
+        top: 200px;
+    }
+    .intro h1 {
+          line-height: 120%;
           font-family: 'Playball', cursive;
           font-weight: normal;
           font-size: 80px;
@@ -914,20 +944,20 @@ Specialize
           text-align: center;
           word-break: break-all;
       }
-    .main .intro .title hr {
+    .intro hr {
         display: block;
         position: relative;
         margin: 2rem auto 0px;
-        background-color: #FFF;
-        height: 0.07rem;
-        width: 3rem;
+        background-color: rgba(254, 123, 98, 1);
+        height: 0.1rem;
+        width: 1rem;
     }
-    .main .intro .title h2 {
-        font-size: 30px;
-        font-family: 'Playball', cursive;
-        font-weight: normal;
+    .intro h2 {
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
         color: #ffffff;
-        margin: 30px auto;
+        margin: 20px auto;
         text-align: center;
     }
     .aboutme .myselfimg {
@@ -1167,7 +1197,6 @@ Specialize
         margin: 0 auto;
         width: 100%;
         position: relative;
-        padding: 0 50px;
     }
     .specialize h3{
         font-size: 40px;
@@ -1177,6 +1206,72 @@ Specialize
         color: #455c82;
         text-align: center;
         margin-top: 40px;
+    }
+    .specialize {
+        /*display: inline-block;*/
+        text-align: center;
+    }
+    .col{
+        width: 100%;
+        height: 608px;
+        margin: 20px auto;
+    }
+    .sp-01{
+        float: left;
+    }
+    .sp-02{
+        float: left;
+    }
+    .sp-03{
+        float: left;
+    }
+    .sp-04{
+        float: left;
+        margin: 46px 100px 50px 190px;
+    }
+    .sp-05{
+        float: right;
+        margin: 46px 190px 50px 100px;
+    }
+    .icon01 {
+        position: relative;
+        display: block;
+        width: 164px;
+        height: 164px;
+        margin: 46px 54px;
+        background: url('../img/ico_sp_01.png') no-repeat;
+    }
+    .icon02 {
+        position: relative;
+        display: block;
+        width: 164px;
+        height: 164px;
+        margin: 46px 136px;
+        background: url('../img/ico_sp_02.png') no-repeat;
+    }
+    .icon03 {
+        position: relative;
+        display: block;
+        width: 164px;
+        height: 164px;
+        margin: 46px 54px;
+        background: url('../img/ico_sp_03.png') no-repeat;
+    }
+    .icon04 {
+        position: relative;
+        display:inline-block;
+        width: 164px;
+        height: 164px;
+        margin-bottom: 46px;
+        background: url('../img/ico_sp_04.png') no-repeat;
+    }
+    .icon05 {
+        position: relative;
+        display: inline-block;
+        width: 164px;
+        height: 164px;
+        margin-bottom: 46px;
+        background: url('../img/ico_sp_05.png') no-repeat;
     }
 }
 @media print,
@@ -1277,14 +1372,9 @@ Specialize
 .effects .img:last-child {
     margin-right: 0;
 }
-.effects .img img {
+
+.overlay {
     display: block;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    height: auto;
-}
-.overlay { display: block;
     position: absolute;
     z-index: 20;
     background: rgba(0, 0, 0, 0.8);
@@ -1323,28 +1413,56 @@ a.close-overlay.hidden {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(254, 123, 98, 0.8);
+    background: rgba(254, 123, 98, 0.9);
     opacity: 0;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s; }
-#effect .overlay a.expand {
+    transition: all 0.5s;
+}
+#effect .overlay {
+    padding-top: 160px;
     position: absolute;
-    width: 300px;
+    width: 420px;
     left: 0;
     right: 0;
     top: 0;
-    content: "";
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    opacity: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    display: block;
+    text-decoration: none;
+}
+.overlay hr{
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    background-color: white;
+    height: 0.1rem;
+    width: 0.8rem;
+}
+.overlay span{
+    left: 0;
+    right: 0;
+    top: 0;
     margin: 0 auto;
     text-align: center;
     color: #fff;
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
     font-weight: 500;
-    font-size: 22px;
-    opacity: 0;
-    text-transform: uppercase;
     letter-spacing: 3px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -1360,7 +1478,7 @@ a.close-overlay.hidden {
 #effect .img.hover .overlay {
     opacity: 1
 }
-#effect .img.hover .overlay a.expand {
+#effect .img.hover .overlay a .expand {
     top: 50%;
     opacity: 1;
 }

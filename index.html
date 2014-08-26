@@ -7,8 +7,13 @@
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
+<style>
+    .wow:first-child {
+        visibility: hidden;
+    }
+</style>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>minjeehahm's portfolio</title>
     <meta name="description" content="">
@@ -33,27 +38,29 @@
 
 <!-- Add your site or application content here -->
 <div class="header clearfix" style="height: 56px; top: 0;">
-    <span class="amc x-align-middle"><a class="x-align-block">aboutMe</a></span>
-    <span class="amc x-align-middle"><a class="x-align-block">myWork</a></span>
-    <span class="amc x-align-middle"><a class="x-align-block">Contact</a></span>
+    <li class="amc x-align-middle"><a href="#section1" class="x-align-block">aboutMe</a></li>
+    <li class="amc x-align-middle"><a href="#section2" class="x-align-block">myWork</a></li>
+    <li class="amc x-align-middle"><a href="#section3" class="x-align-block">Contact</a></li>
 </div>
 <div class="main">
 <div class="intro">
     <img class="spoiler" style="-webkit-filter: blur(15px); cursor: pointer;">
+
     <div class="title">
-        <h1 class="scrollReveal animated fadeInDown">No one's knowledge here can go beyond one's experience.</h1>
-        <hr class="scrollReveal animated fadeInUp">
-        <h2 class="scrollReveal animated fadeInUp">John Locke</h2>
+        <h1 class="wow  animated fadeInDown">No one's knowledge here can go beyond <br>one's experience.</h1>
+        <hr class="wow animated fadeInUp">
+        <h2 class="wow  animated fadeInUp">John Locke</h2>
     </div>
 </div>
-<div class="aboutme">
-    <div class="myself" style="background-color: #f3f5f8; height: 400px;">
-        <div class="myselfimg scrollReveal animated flipInX"></div>
-        <h3 class="animated fadeInUp">I AM AN UX DESIGNER.</h3>
-        <h4 class="animated fadeInUp">Creating a great experience is one of the key success factors for User
+<div class="aboutme" id="section1" style="background-color: #f3f5f8; height: 400px;">
+    <div class="myself">
+        <div data-wow-delay="0.5s" class="myselfimg wow animated flipInX" style="visibility: visible;"></div>
+        <h3 data-wow-delay="0.6s" class="wow animated fadeInUp">I AM AN UX DESIGNER.</h3>
+        <h4 data-wow-delay="0.7s" class="wow animated fadeInUp">Creating a great experience is one of the key success
+            factors for User
             Experience Design.</h4>
 
-        <div class="arrow animated fadeInUp"></div>
+        <div data-wow-delay="0.8s" class="wow arrow animated fadeInUp"></div>
     </div>
 </div>
 <div class="timeline">
@@ -64,7 +71,7 @@
         <span class="year x-align-block">01/2014-01/2015</span>
     </div>
     <div class="projecticon">
-        <div class="project_01 animated bounceIn"></div>
+        <div class="project_01 wow animated bounceIn"></div>
         <div class="description">
             <div class="project-title" style="background-color: #7891b8;">
                 <h5>BASETALK</h5>
@@ -111,7 +118,7 @@
         <span class="year x-align-block">10/2011-01/2014</span>
     </div>
     <div class="projecticon">
-        <div class="project_02 animated bounceIn delay-05s"></div>
+        <div class="project_02 wow animated bounceIn delay-05s"></div>
         <div class="description">
             <div class="project-title" style="background-color: #7891b8;">
                 <h5>BAND</h5>
@@ -152,7 +159,7 @@
         </div>
     </div>
     <div class="projecticon">
-        <div class="project_03 animated bounceIn delay-1s"></div>
+        <div class="project_03 wow animated bounceIn delay-1s"></div>
         <div class="description">
             <div class="project-title" style="background-color: #7891b8;">
                 <h5>Me2day</h5>
@@ -199,7 +206,7 @@
         <span class="year x-align-block">01/2010-10/2011</span>
     </div>
     <div class="projecticon">
-        <div class="project_04 animated bounceIn animated bounceIn delay-2s"></div>
+        <div class="project_04 wow animated bounceIn delay-2s"></div>
         <div class="description">
             <div class="project-title" style="background-color: #7891b8;">
                 <h5>GARFOLIO</h5>
@@ -240,134 +247,127 @@
         </div>
     </div>
 </div>
-<div class="mywork">
+<div class="mywork" id="section2">
     <div class="content">
         <div id="effect" class="effects clearfix">
-            <div class="prf_01">
+            <a class="prf_01 wow animated fadeInUp" href="img/prf_01_h.png">
                 <div class="img">
                     <img src="img/prf_01.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">Grafolio Web Design</a>
-                        <a class="close-overlay hidden">x</a>
+                    <div class="overlay expand">
+                        Grafolio
+                        <hr>
+                        <span>Web Design</span>
                     </div>
                 </div>
-            </div>
-            <div class="prf_02">
+            </a>
+            <a class="prf_02 wow animated fadeInUp" href="img/prf_02_h.png">
                 <div class="img">
                     <img src="img/prf_02.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">Me2day App Design</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">Me2day
+                        <hr>
+                        <span>App & Web Design</span></div>
                 </div>
-            </div>
-            <div class="prf_03">
+            </a>
+            <a class="prf_03 wow animated fadeInUp" href="img/prf_03_h.png">
                 <div class="img">
                     <img src="img/prf_03.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">Drinking Design Party Poster</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">Drinking Design<br>Party
+                        <hr>
+                        <span>Graphic Design</span></div>
                 </div>
-            </div>
-            <div class="prf_04">
+            </a>
+            <a class="prf_04 wow animated fadeInUp" href="img/prf_04_h.png">
                 <div class="img">
                     <img src="img/prf_04.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">App icons</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">BAND
+                        <hr>
+                        <span>UX Design</span></div>
                 </div>
-            </div>
-            <div class="prf_05">
+            </a>
+            <a class="prf_05 wow animated fadeInUp" href="img/prf_05_h.png">
                 <div class="img">
                     <img src="img/prf_05.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">BAND App Design</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">BAND
+                        <hr>
+                        <span>UX & App Design</span></div>
                 </div>
-            </div>
-            <div class="prf_06">
+            </a>
+            <a class="prf_06 wow animated fadeInUp" href="img/prf_06_h.png">
                 <div class="img">
                     <img src="img/prf_06.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">Christmas illustration</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">CHRISTMAS
+                        <hr>
+                        <span>Illustration</span></div>
                 </div>
-            </div>
-            <div class="prf_07">
+            </a>
+            <a class="prf_07 wow animated fadeInUp" href="img/prf_07_h.png">
                 <div class="img">
                     <img src="img/prf_07.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">Interview App Design</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">Interview
+                        <hr>
+                        <span>App Design</span></div>
                 </div>
-            </div>
-            <div class="prf_08">
+            </a>
+            <a class="prf_08 wow animated fadeInUp" href="img/prf_08_h.png">
                 <div class="img">
                     <img src="img/prf_08.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">BASETALK icons</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">BASETALK
+                        <hr>
+                        <span>icon Design</span></div>
                 </div>
-            </div>
-            <div class="prf_09">
+            </a>
+            <a class="prf_09 wow animated fadeInUp" href="img/prf_09_h.png">
                 <div class="img">
                     <img src="img/prf_09.png" alt="">
 
-                    <div class="overlay">
-                        <a href="#" class="expand">BASETALK App Design</a>
-                        <a class="close-overlay hidden">x</a>
-                    </div>
+                    <div class="overlay expand">BASETALK
+                        <hr>
+                        <span>App Design</span></div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
-<div class="specialize">
+<div class="specialize wow animated fadeInUp">
     <h3>AS A MULTI DISCIPLINED DESIGNER,
         <br>I AM SPECIALIZE IN...</h3>
 
-    <div class="arrow"></div>
+    <div class="arrow wow animated fadeInUp"></div>
     <div class="col">
         <div class="features-wrapper" style="display: inline-block;width: 980px;">
-            <div class="specialize-img sp-01 wp2 animated fadeInUp">
+            <div class="specialize-img sp-01 wow wp2 animated fadeInUp">
                 <div class="icon01"></div>
                 <h2>UI/BX</h2>
 
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="specialize-img sp-02 wp2 animated fadeInUp delay-05s">
+            <div class="specialize-img sp-02 wow wp2 animated fadeInUp delay-05s">
                 <div class="icon02"></div>
                 <h2>WEB DEVELOPER</h2>
 
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="specialize-img sp-03 wp2 animated fadeInUp delay-1s">
+            <div class="specialize-img sp-03 wow wp2 animated fadeInUp delay-1s">
                 <div class="icon03"></div>
                 <h2>UX STRATEGY</h2>
 
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="specialize-img sp-04 wp2 animated fadeInUp delay-2s">
+            <div class="specialize-img sp-04 wow wp2 animated fadeInUp delay-2s">
                 <div class="icon04"></div>
                 <h2>MOTION GRAPHICS</h2>
 
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="specialize-img sp-05 wp2 animated fadeInUp delay-3s">
+            <div class="specialize-img sp-05 wow wp2 animated fadeInUp delay-3s">
                 <div class="icon05"></div>
                 <h2>SOUND DESIGN</h2>
 
@@ -378,41 +378,94 @@
     </div>
 </div>
 </div>
-<div class="footer text-center" style="height: 640px;background-color: #414e63;">
-    <span>DROP ME A LINE.</span>
+<div class="footer text-center" style="height: 640px;background-color: #414e63;" id="section3">
+    <span class="wow animated fadeInUp">DROP ME A LINE.</span>
 
-    <div class="input">
+    <div class="input wow animated fadeInUp delay-05s">
         <form action="#">
-            <input type="text" name="" value="" autocomplete="off" placeholder="EMAIL" required>
+            <input type="text" name="" value="" autocomplete="off" placeholder="YOUR EMAIL" required>
         </form>
     </div>
-    <div class="message">
+    <div class="message wow animated fadeInUp delay-1s">
+        <textarea name="your-message" cols="40" rows="1" class="your-message" placeholder="YOUR MESSAGE"
+                  aria-invalid="false"></textarea>
+
         <form action="#">
-            <input type="text" name="" value="" autocomplete="off" placeholder="MESSAGE" required>
+            <!--<input type="text" name="" value="" autocomplete="off" placeholder="MESSAGE" required>-->
             <input type="submit" name="" value="SEND">
         </form>
     </div>
-    <hr>
+    <hr class="wow wp2 animated fadeInUp delay-2s">
     <div class="sns">
-        <div class="sns_01"></div>
-        <div class="sns_02"></div>
-        <div class="sns_03"></div>
-        <div class="sns_04"></div>
+        <a class="sns_01 wow animated flipInY delay-2s" href="https://www.facebook.com/minjeeveronicahahm"></a>
+        <a class="sns_02 wow animated flipInY delay-3s" href="http://www.linkedin.com/pub/minjee-hahm/63/73/5a"></a>
+        <a class="sns_03 wow animated flipInY delay-4s" href="https://www.behance.net/VeronicaHaha"></a>
+        <a class="sns_04 wow animated flipInY delay-5s" href="http://instagram.com/veronicahaha"></a>
     </div>
 </div>
 <div class="bottom" style="height: 56px;background-color: #33373d;">
     <span>Designed & Developed by MinJee Hahm</span>
 </div>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script src="js/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.poptrox.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 <script src="js/spoiler.js"></script>
+<script src="dist/wow.min.js"></script>
+<script src="js/jquery.smooth-scroll.js"></script>
+<script>
+
+    // Prevent console.log from generating errors in IE for the purposes of the demo
+    if (!window.console) console = { log: function () {
+    } };
+
+    // The actual plugin
+    $('.header').singlePageNav({
+        offset: $('.header').outerHeight(),
+        filter: ':not(.external)',
+        updateHash: true,
+        beforeStart: function () {
+            console.log('begin scrolling');
+        },
+        onComplete: function () {
+            console.log('done scrolling');
+        }
+    });
+</script>
 <script>
     $(function () {
         $('.spoiler').spoilerAlert({max: 10, partial: 0});
     })
+</script>
+<script>
+    wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100
+            }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function () {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+    };
+
+</script>
+<script>
+    $(function () {
+
+        var foo = $('#effect');
+        foo.poptrox({
+            usePopupCaption: true
+        });
+
+    });
 </script>
 </body>
 </html>
