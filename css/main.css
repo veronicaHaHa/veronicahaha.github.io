@@ -116,6 +116,7 @@ textarea {
     text-align: center;
     background-color: #ffffff;
     z-index: 999;
+    border-bottom: 1px solid #edeff1;
 }
 
 .header li {
@@ -549,67 +550,80 @@ Specialize
     /*display: inline-block;*/
     text-align: center;
 }
-.col{
+.features-wrapper{
     width: 100%;
-    height: 608px;
-    margin: 20px auto;
+    margin-top: 20px;
 }
-.sp-01{
-    float: left;
+.specialize-img button {
+    outline: none;
+    border: none;
 }
-.sp-02{
-    float: left;
-}
-.sp-03{
-    float: left;
-}
-.sp-04{
-    float: left;
-    margin: 46px 100px 50px 190px;
-}
-.sp-05{
-    float: right;
-    margin: 46px 190px 50px 100px;
+.specialize-img button:hover{
+    color: rgb(254, 123, 98);
+    border: none;
 }
 .icon01 {
-    position: relative;
-    display: block;
     width: 164px;
     height: 164px;
-    margin: 46px 54px;
-    background: url('../img/ico_sp_01.png') no-repeat;
+    display: inline-block;
+    transition: all 0.1s ease-in;
+    margin: 10px auto;
+}
+.icon01:hover {
+    transition: all 0.2s ease-in;
+    background: url('../img/ico_sp_01_p.png') no-repeat;
 }
 .icon02 {
+    display: inline-block;
     position: relative;
-    display: block;
     width: 164px;
     height: 164px;
-    margin: 46px 136px;
+    margin: 10px auto;
+    transition: all 0.1s ease-in;
     background: url('../img/ico_sp_02.png') no-repeat;
 }
+.icon02:hover {
+    transition: all 0.2s ease-in;
+    background: url('../img/ico_sp_02_p.png') no-repeat;
+}
 .icon03 {
-     position: relative;
-     display: block;
-     width: 164px;
-     height: 164px;
-     margin: 46px 54px;
-     background: url('../img/ico_sp_03.png') no-repeat;
- }
-.icon04 {
+    display: inline-block;
     position: relative;
-    display:inline-block;
     width: 164px;
     height: 164px;
-    margin-bottom: 46px;
+    margin: 10px auto;
+    transition: all 0.1s ease-in;
+    background: url('../img/ico_sp_03.png') no-repeat;
+ }
+.icon03:hover {
+    transition: all 0.2s ease-in;
+    background: url('../img/ico_sp_03_p.png') no-repeat;
+}
+.icon04 {
+    display: inline-block;
+    position: relative;
+    width: 164px;
+    height: 164px;
+    margin: 10px auto;
+    transition: all 0.1s ease-in;
     background: url('../img/ico_sp_04.png') no-repeat;
 }
+.icon04:hover {
+    transition: all 0.2s ease-in;
+    background: url('../img/ico_sp_04_p.png') no-repeat;
+}
 .icon05 {
-    position: relative;
     display: inline-block;
+    position: relative;
     width: 164px;
     height: 164px;
-    margin-bottom: 46px;
+    margin: 10px auto;
+    transition: all 0.1s ease-in;
     background: url('../img/ico_sp_05.png') no-repeat;
+}
+.icon05:hover {
+    transition: all 0.2s ease-in;
+    background: url('../img/ico_sp_05_p.png') no-repeat;
 }
 .specialize-img h2{
     font-family: 'Montserrat', sans-serif;
@@ -619,6 +633,7 @@ Specialize
     z-index: 3;
 }
 .specialize-img p{
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -752,7 +767,12 @@ Specialize
     margin: 0 12px  0 0;
     width: 46px;
     height: 46px;
+    transition: all 0.1s ease-in;
     background-image: url("../img/ico_fb.png");
+}
+.sns_01:hover{
+    transition: all 0.1s ease-in;
+    background: url('../img/ico_fb_p.png') no-repeat;
 }
 .sns_02{
      float: left;
@@ -761,6 +781,10 @@ Specialize
      height: 46px;
      background-image: url("../img/ico_linkedin.png");
  }
+.sns_02:hover{
+    transition: all 0.1s ease-in;
+    background: url('../img/ico_linkedin_p.png') no-repeat;
+}
 .sns_03{
     float: left;
     margin: 0 12px;
@@ -768,12 +792,21 @@ Specialize
     height: 46px;
     background-image: url("../img/ico_behance.png");
 }
+.sns_03:hover{
+    transition: all 0.1s ease-in;
+    background: url('../img/ico_behance_p.png') no-repeat;
+}
 .sns_04{
     float: left;
     margin: 0 0 0 12px;
     width: 46px;
     height: 46px;
     background-image: url("../img/ico_instagram.png");
+}
+.sns_04:hover{
+
+    transition: all 0.1s ease-in;
+    background: url('../img/ico_instagram_p.png') no-repeat;
 }
 .bottom span{
     display: inline-block;
@@ -1201,7 +1234,7 @@ Specialize
     .specialize h3{
         font-size: 40px;
         font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
+        font-weight: 400;
         letter-spacing: -2px;
         color: #455c82;
         text-align: center;
@@ -1215,6 +1248,9 @@ Specialize
         width: 100%;
         height: 608px;
         margin: 20px auto;
+    }
+    .features-wrapper{
+        width: 980px;
     }
     .sp-01{
         float: left;
@@ -1272,6 +1308,20 @@ Specialize
         height: 164px;
         margin-bottom: 46px;
         background: url('../img/ico_sp_05.png') no-repeat;
+    }
+    .specialize-img h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color:#7891b8;
+        z-index: 3;
+    }
+    .specialize-img p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color:#7891b8;
+        z-index: 4;
     }
 }
 @media print,

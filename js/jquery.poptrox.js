@@ -49,13 +49,9 @@
 					popupBackgroundColor:			'#FFFFFF',					// (Default Style) Popup background color (when usePopupStyling = true)
 					popupTextColor:					'#000000',					// (Default Style) Popup text color (when usePopupStyling = true)
 					popupLoaderTextSize:			'2em',						// (Default Style) Popup loader text size
-					popupCloserBackgroundColor:		'#000000',					// (Default Style) Popup closer background color (when usePopupStyling = true)
 					popupCloserTextColor:			'#FFFFFF',					// (Default Style) Popup closer text color (when usePopupStyling = true)
 					popupCloserTextSize:			'20px',						// (Default Style) Popup closer text size
-					popupPadding:					10,							// (Default Style) Popup padding (when usePopupStyling = true)
-					popupCaptionHeight:				60,							// (Default Style) Popup height of caption area
 					popupCaptionTextSize:			null,						// (Default Style) Popup caption text size
-					popupBlankCaptionText:			'(untitled)',				// Applied to images that don't have captions (when captions are enabled)
 					popupCloserText:				'&#215;',					// Popup closer text
 					popupLoaderText:				'&bull;&bull;&bull;&bull;',	// Popup loader text
 					popupClass:						'poptrox-popup',			// Popup class
@@ -148,8 +144,8 @@
 							
 						if ($caption.length > 0) {
 							
-							$popup
-								.css('padding-bottom', settings.popupCaptionHeight + 'px');
+//							$popup
+//								.css('padding-bottom', settings.popupCaptionHeight + 'px');
 							
 							$caption
 								.css('position', 'absolute')
