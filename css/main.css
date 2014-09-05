@@ -455,14 +455,12 @@ MyWork
     position: relative;
     background-color: white;
     overflow: hidden;
-    padding: 3em 0 0 0;
     list-style: none;
     text-align: center;
 }
 .content{
     overflow: hidden;
     margin: 0;
-    padding: 3em 0 0 0;
     width: 100%;
     list-style: none;
     text-align: center;
